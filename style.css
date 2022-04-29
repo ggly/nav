@@ -1,0 +1,110 @@
+/* css reset */
+*{box-sizing: border-box;}
+*:before,*:after{box-sizing: border-box;}
+*{margin:0;padding:0;}
+ul,ol{list-style: none;}
+a{color: inherit;text-decoration: none;}
+
+/* style */
+body{background-color: #eee;}
+.search{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+@media(min-width: 500px){
+    .search{
+        max-width:400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.search > input{
+    width: 100%;
+    margin-right: 20px;
+    padding: 0 5px;
+    height: 40px;
+    border: 1px solid #ddd; /*覆盖了之前的border，方便后面操作*/
+    border-radius: 4px;
+}
+.search > button{
+    white-space: nowrap;   /*按钮不进行换行*/
+    padding: 0 27px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #0282b9;
+    color: #eee;
+    font-size: 16px;
+}
+.globalMain{
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.siteList{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+@media(min-width: 500px){
+    .siteList{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 100px;
+        justify-content: flex-start;
+    }
+}
+.siteList > li{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+@media (min-width: 500px) {
+    .siteList > li{
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+}
+.site{
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px 0;
+    position: relative;
+}
+.logo{
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+.link{
+    font-size: 14px;
+}
+.addButton{
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px 0;
+    background-color: white;
+    border-radius: 4px;
+}
+.text{
+    font-size: 14px;
+    margin-top: 4px;
+}
+.del{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    text-align: center;
+}
